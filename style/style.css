@@ -3,3 +3,107 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.hero {
+  background-color: rgb(225, 207, 210);
+  height: 100dvh;
+  width: 100dvw;
+}
+
+.search input {
+  width: 450px;
+  padding: 8px;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search i {
+  position: relative;
+  left: -35px;
+  opacity: 0.8;
+}
+
+.search {
+  /* box-shadow: 1px 1px 5px black; */
+  position: absolute;
+  left: 440px;
+}
+
+nav {
+  position: relative;
+  width: 100vw;
+  height: 10%;
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  align-items: center;
+}
+
+.btnGrp {
+  position: absolute;
+  right: 140px;
+  display: flex;
+  gap: 20px;
+}
+
+.btnGrp button {
+  width: 110px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.btnGrp button:first-child {
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+.btnGrp button:last-child {
+  background-color: maroon;
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  left: 100px;
+}
+
+.lang .flag {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  border-radius: 100%;
+}
+
+.lang {
+  position: absolute;
+  right: 510px;
+  display: flex;
+}
+
+select {
+  appearance: none; /* Removes default browser styles */
+  background-color: #ffb514;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  width: 64px;
+}
+
+/* Add a custom arrow using background */
+select {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="white" d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  padding-right: 30px; /* Space for the arrow */
+}
