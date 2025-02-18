@@ -144,8 +144,14 @@ select {
 }
 
 .middleBtnGrp button {
+  border: none;
   margin: 20px;
   width: 130px;
   height: 40px;
   border-radius: 20px;
+}
+
+.middleBtnGrp button:first-child {
+  background-color: maroon;
+  color: white;
 }
