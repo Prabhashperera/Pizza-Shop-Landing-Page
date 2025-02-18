@@ -144,14 +144,29 @@ select {
 }
 
 .middleBtnGrp button {
+  margin: 30px 10px;
   border: none;
-  margin: 20px;
   width: 130px;
   height: 40px;
   border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .middleBtnGrp button:first-child {
   background-color: maroon;
   color: white;
+}
+
+.middleBtnGrp button:last-child {
+  background-color: transparent;
+  border: 2px solid maroon;
+  color: maroon;
+}
+
+.middleBtnGrp button:last-child:hover {
+  transition: 0.5s;
+  background-color: maroon;
+  color: white;
+  border: none;
 }
